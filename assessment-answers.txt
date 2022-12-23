@@ -1,0 +1,32 @@
+Time Complexity
+
+Step 1: Runtime Analysis Answers
+
+insert - unshift
+append - push
+
+Results for the tinyArray
+insert 40.9 μs
+append 124.1 μs
+
+Results for the smallArray
+insert 48.1 μs
+append 153.7 μs
+
+Results for the mediumArray
+insert 257.7 μs
+append 289.4 μs
+
+Results for the largeArray
+insert 11.1634 ms
+append 665.1 μs
+
+Results for the extraLargeArray
+insert 1.1279526 s
+append 5.0667 ms
+
+Explanation: The pattern I see is that the doublerInsert function (which uses the unshift method) is faster than the doublerAppend function (which uses the push method) to a certain point. This means that the unshift method is faster than the push method when an array is a small to medium size. However, the bigger the array, the slower the unshift method becomes. So, it is more efficient and cost-effective to use the push  method when working with a larger array. So, the doublerAppend function scales faster and better than the doublerInsert function. We can tell by looking at the times that each function takes to complete.
+
+Step 1 Extra Credit: The doublerInsert function is slower because the unshift adds values to the beginning of an array. Because of this, the unshift always needs to copy over a previously allotted space in memory. In contrast, the doublerAppend function uses the push method, which doesn't usually need to reallocate a place in memory.
+
+
