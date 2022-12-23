@@ -28,6 +28,9 @@ console.log(addToZero([1, 2, 3]));
 console.log(addToZero([1]));
 console.log(addToZero([]));
 
+// Runtime of this function: O(n^2), 3 ms
+// Extra Credit: Space Complexity of this function: O(n^2)
+
 console.log("Runtime of this function: O(n^2), 3 ms");
 console.log("Extra Credit: Space Complexity of this function: O(n^2)");
 
@@ -40,6 +43,7 @@ console.log("Problem 2");
 
 const hasUniqueChars = (str) => {
 	let unique = new Set([]);
+
 	for (let i = 0; i < str.length; i++) {
 		unique.add(str[i]);
 	}
@@ -48,6 +52,9 @@ const hasUniqueChars = (str) => {
 
 console.log(hasUniqueChars("Monday"));
 console.log(hasUniqueChars("Moonday"));
+
+// Runtime of function: O(1), 50 μs
+// Extra Credit: Space Complexity of function: O(1)
 
 console.log("Runtime of function: O(1), 50 μs");
 console.log("Extra Credit: Space Complexity of function: O(1)");
@@ -77,6 +84,9 @@ const isPangram = (str) => {
 console.log(isPangram("The quick brown fox jumps over the lazy dog!"));
 console.log(isPangram("I like cats, but not mice"));
 
+// Runtime of function: O(n), 90 μs
+// Extra Credit: Space Complexity of function: O(n)
+
 console.log("Runtime of function: O(n), 90 μs");
 console.log("Extra Credit: Space Complexity of function: O(n)");
 
@@ -100,6 +110,9 @@ const findLongestWord = (arr) => {
 };
 
 console.log(findLongestWord(["hi", "hello"]));
+
+// Runtime of function: O(n), 7 ms
+// Extra Credit: Space Complexity of function: O(1)
 
 console.log("Runtime of function: O(n), 7 ms");
 console.log("Extra Credit: Space Complexity of function: O(1)");
