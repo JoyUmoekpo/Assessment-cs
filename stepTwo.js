@@ -7,7 +7,7 @@
 
 console.log("--------------------------------------");
 
-console.log("Problem 1");
+console.log("Problem 1"); 
 
 const addToZero = (arr) => {
 	let result = false;
